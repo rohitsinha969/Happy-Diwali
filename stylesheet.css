@@ -1,10 +1,9 @@
 @font-face {
     font-family: 'sssamarkan';
-    src: url("./samarkan-font/SAMAN___.ttf");
+    src: url('samarkan-font/SAMAN___.ttf');
 }
-
-:root{
-    --sam : 'sssamarkan';
+:root {
+    --sam: 'sssamarkan';
 }
 
 html {
