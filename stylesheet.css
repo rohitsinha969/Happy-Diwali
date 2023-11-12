@@ -14,6 +14,7 @@ html {
     font-family: var(--sam);
 }
 .constructor{
+    font-family: var(--sam);
     color: #e5c654;
     padding: 1rem;
     font-size: larger;
@@ -209,6 +210,7 @@ html {
     padding: 5rem 2rem;
 }
 .title {
+    font-family: var(--sam);
     position: absolute;
     left: 0;
     right: 0;
@@ -216,7 +218,7 @@ html {
     color: #ffe45e;
     text-align: center;
     font-size: 10rem;
-    font-style: italic;
+    /* font-style: italic; */
     animation: move-up 2s forwards;
-    text-shadow: #ffe45e 0 0 30px, #e5c654 1px 0 10px;
+    text-shadow: #ffe45e7a 0 0 30px, #e5c654 1px 0 10px;
 }
