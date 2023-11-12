@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Samarkannn';
+    src: url(/samarkan-font/SAMAN___.ttf);
+}
+
+:root{
+    --sam : 'Samarkannn';
+}
+
+html {
+    background-size: cover;
+    background: linear-gradient(#000, #333);
+    background-repeat: no-repeat;
+    min-height: 100%;
+    font-family: var(--sam);
+}
+.constructor{
+    color: #e5c654;
+    padding: 1rem;
+    font-size: larger;
+    opacity: 0.90;
+    font-weight: 100;
+}
+.container {
+    width: 100px;
+    float: left;
+    padding: 1rem;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    animation: move-up 2s forwards 10s;
+    margin: 0 auto;
+}
+.box:after {
+    width: 1px;
+    content: "";
+    height: 5px;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    left: 50%;
+    animation: fadeout 1s forwards;
+    animation-delay: 1s;
+}
+.box.m3 {
+    animation: move-up-3 2s forwards;
+}
+.box.m3 {
+    animation: move-up-2 2s forwards;
+}
+
+.cracker.solid {
+    border: solid rgba(255, 225, 200, 1) 1px;
+}
+.cracker.dotted {
+    border: dotted rgba(255, 205, 100, 1) 10px;
+}
+.cracker {
+    position: absolute;
+    border: dashed rgba(255, 255, 250, 1) 2px;
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    border-radius: 50%;
+    animation: burst 2s infinite;
+}
+
+.a1 {
+    animation-duration: 4s;
+}
+.d1 {
+    animation-delay: 5s;
+}
+.a2 {
+    animation-duration: 2s;
+}
+.d2 {
+    animation-delay: 8s;
+}
+.a3 {
+    animation-duration: 3s;
+}
+.d3 {
+    animation-delay: 12s;
+}
+.a4 {
+    animation-duration: 1s;
+}
+.d4 {
+    animation-delay: 15s;
+}
+.m1 {
+    animation-delay: 100ms;
+}
+.m2 {
+    animation-delay: 300ms;
+}
+.m3 {
+    animation-delay: 600ms;
+}
+@keyframes move-up {
+    0% {
+        transform: translateY(500px);
+   }
+    50% {
+        transform: translateY(500px);
+   }
+    100% {
+        transform: translateY(100px);
+   }
+}
+@keyframes move-up-2 {
+    0% {
+        transform: translateY(500px);
+   }
+    50% {
+        transform: translateY(500px);
+   }
+    100% {
+        transform: translateY(150px);
+   }
+}
+@keyframes move-up-3 {
+    0% {
+        transform: translateY(500px);
+   }
+    50% {
+        transform: translateY(500px);
+   }
+    100% {
+        transform: translateY(220px);
+   }
+}
+@keyframes fadeout {
+    0% {
+        background: rgba(255, 250, 255, .8);
+   }
+    50% {
+        background: rgba(251, 250, 255, .8);
+        height: 100px;
+   }
+    100% {
+        background: rgba(0, 0, 0, 0);
+        height: 120px;
+   }
+}
+@keyframes burst {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+   }
+    50% {
+        transform: scale(0);
+        opacity: 1;
+   }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+   }
+}
+
+.land {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.block {
+    background: black;
+    width: 30px;
+    height: 40px;
+    float: left;
+    bottom: 0;
+}
+.block:after {
+    display: block;
+    border: yellow dotted 10px;
+    content: "";
+    height: 50px;
+    width: 8px;
+}
+.block:before {
+    display: block;
+    border: gold dotted 10px;
+    content: "";
+    height: 90px;
+    width: 10px;
+}
+.p0 {
+    padding: 0.5rem;
+}
+.p1 {
+    padding: 1rem;
+}
+.p2 {
+    padding: 2rem;
+}
+.p3 {
+    padding: 3rem;
+}
+.p4 {
+    padding: 4rem 1rem;
+}
+.p5 {
+    padding: 5rem 2rem;
+}
+.title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+    color: #ffe45e;
+    text-align: center;
+    font-size: 10rem;
+    font-style: italic;
+    animation: move-up 2s forwards;
+    text-shadow: #ffe45e 0 0 30px, #e5c654 1px 0 10px;
+}
